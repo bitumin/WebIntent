@@ -1,5 +1,6 @@
 package net.tunts.webintent;
 
+import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -11,6 +12,8 @@ import org.json.JSONObject;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Build;
+import android.os.StrictMode;
 import android.text.Html;
 
 import org.apache.cordova.CordovaPlugin;
@@ -189,6 +192,15 @@ public class WebIntent extends CordovaPlugin {
     }
 
     void startActivity(String action, Uri uri, String type, Map<String, String> extras, Map<String, String> handlerMap) {
+        if (Build.VERSION.SDK_INT >= 24) {
+            try {
+                Method m = StrictMode.class.getMethod("disableDeathOnFileUriExposure");
+                m.invoke(null);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+
         Intent i = (uri != null ? new Intent(action, uri) : new Intent(action));
 
         if (handlerMap != null) {
