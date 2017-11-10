@@ -10,7 +10,7 @@
     "platforms": [
       "android"
     ]
-  }
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com:ralorenzo/WebIntent"
