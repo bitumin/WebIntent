@@ -2,15 +2,20 @@
   "name": "cordova-cvaconsulting-webintent",
   "version": "0.2.1",
   "description": "By Boris Smus",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "cordova": {
+    "id": "cordova-cvaconsulting-webintent",
+    "platforms": [
+      "android"
+    ]
+  }
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cvaconsulting/WebIntent.git"
+    "url": "https://github.com:ralorenzo/WebIntent"
   },
-  "author": "",
+  "author": "x",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/cvaconsulting/WebIntent/issues"
