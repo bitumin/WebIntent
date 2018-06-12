@@ -1,24 +1,24 @@
 {
-  "name": "cordova-cvaconsulting-webintent",
-  "version": "0.2.1",
+  "name": "net.tunts.webintent",
+  "version": "0.1.0",
   "description": "By Boris Smus",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "cordova": {
-    "id": "cordova-cvaconsulting-webintent",
+    "id": "net.tunts.webintent",
     "platforms": [
       "android"
     ]
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ralorenzo/WebIntent"
+    "url": "https://github.com/bitumin/WebIntent"
   },
-  "author": "x",
+  "author": "Boris Smus",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/cvaconsulting/WebIntent/issues"
+    "url": "https://github.com/bitumin/WebIntent/issues"
   },
-  "homepage": "https://github.com/cvaconsulting/WebIntent#readme"
+  "homepage": "https://github.com/bitumin/WebIntent#readme"
 }
